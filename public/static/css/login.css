@@ -1,0 +1,94 @@
+/* start rules */
+*{
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* end rules */
+
+/**/
+#flex{
+    display: flex;
+    flex-direction: row;
+}
+#flex .pic{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../imgs/login/log.jpeg')center/cover fixed no-repeat;
+}
+#flex .fields{
+    height: 100vh;
+    width: 60vw;
+    background: #282828;
+    border: none;
+    position: relative;
+}
+
+#flex .fields form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+#flex .fields form h1{
+    margin: 20px 0;
+    color: whitesmoke;
+    font-size: 30px;
+}
+#flex .fields form input{
+    margin: 1rem 0;
+    height: 40px;
+    width:90%;
+    font-size: 22px;
+    text-align: center;
+    color: #F26419;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #F26419
+}
+#flex .fields form .log-btn,
+#flex .fields form .reg-btn{
+    margin: 1rem 0;
+    width: 90%;
+    height: 40px;
+    font-size: 22px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 2px solid #F26419;
+    background: #282828;
+    color: #F26419;
+    border-radius: 20px;
+    transition: all 1s ease;
+}
+#flex .fields form a{
+    text-decoration: none;
+        color: #F26419;
+        
+}
+#flex .fields form button:hover{
+    border: 2px solid #F26419;
+    background: #F26419;
+    color: #282828;
+}
+#flex .fields form button:hover > a{
+    color: #282828
+} 
+#flex .or{
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+@media screen and (max-width:776px){
+    #flex .pic{ display: none}
+    #flex .fields{
+        width: 100vw;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../imgs/login/log.jpeg')center/cover fixed no-repeat;
+    }
+}
+
+/**/

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+     <!--  google fonts   -->
+     <!--    -->
+    <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+ 
+</head>
+
+<body>
+     
+<!--  start nav   -->
+     <nav>
+         <ul>
+             <li><a href="/users/uploads"><img src="<%= (img) ? '/uploads/'+img : '/static/imgs/home/avatar.jpg' %>" alt="image"></a></li>
+             <li class="active"><a href="#"><i class="fas fa-home"></i></a></li>
+             <li><a href="/users/profile"><i class="fas fa-user"></i></a></li>
+             <li><a href="/users/logout"><i class="fas fa-sign-out-alt"></i></a></li>
+         </ul>
+     </nav>
+<!--  end nav   -->
+
+<!--  start tebel   -->
+   <div class="tebel">
+       <table>
+           <tr>
+               <th>Class</th>
+               <th>Degree</th>
+           </tr>
+           <tr>
+               <td>Arabic</td>
+               <td><%= (subjs.arabic)? subjs.arabic : 0 %></td>
+           </tr>
+        <tr>
+            <td>English</td>
+            <td><%= (subjs.english)? subjs.english : 0 %></td>
+        </tr>
+
+        <tr>
+            <td>Math</td>
+            <td><%= (subjs.math)? subjs.math : 0 %></td>
+        </tr>
+
+        <tr>
+            <td>Art</td>
+            <td><%= (subjs.art)? subjs.art : 0 %></td>
+        </tr>
+
+        <tr>
+            <td>Religion</td>
+            <td><%= (subjs.religion)? subjs.religion : 0 %></td>
+        </tr>
+
+        <tr>
+            <td>Grammar</td>
+            <td><%= (subjs.grammar)? subjs.grammar : 0 %></td>
+        </tr>
+
+        <tr>
+            <td>Literature</td>
+            <td><%= (subjs.literature)? subjs.literature : 0 %></td>
+        </tr>
+
+        <tr>
+            <td>Chemistry</td>
+            <td><%= (subjs.chemistry)? subjs.chemistry : 0 %></td>
+        </tr>
+
+        <tr>
+            <td>Physics</td>
+            <td><%= (subjs.physics)? subjs.physics : 0 %></td>
+        </tr>
+
+        <tr>
+            <td>Biology</td>
+            <td><%= (subjs.biology)? subjs.biology : 0 %></td>
+        </tr>
+
+       </table>
+   </div>
+<!--  end tebel   -->
+    
+     <!--    js     -->
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/fontawesome-all.min.js"></script>
+    <script src="/static/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+     <!--  google fonts   -->
+     <!--    -->
+    <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+
+<body>
+   
+<!-- start table  -->
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Pwd</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+
+    <% if(students) students.forEach((student)=>{ %>
+        <tr>  
+            <td><%= student.email %></td>
+            <td><%= student.name %></td>
+            <td><%= student.pwd %></td>
+            <td>
+             <a href=<%= student.editUrl %>>
+              <i class="fas fa-edit"></i>
+             </a>
+            </td>
+            
+            <td>
+             <a href= <%= student.delUrl %> >
+              <i class="fas fa-trash-alt"></i>
+             </a>
+            </td>
+        </tr>
+    <% }); %>
+
+</table>
+<!-- end table  -->
+     <!--    js     -->
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/fontawesome-all.min.js"></script>
+    <script src="/static/js/login.js"></script>
+</body>
+</html>

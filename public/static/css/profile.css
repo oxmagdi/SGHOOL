@@ -1,0 +1,107 @@
+/* start rules */
+*{
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #282828;
+}
+/* end rules */
+
+/* start nav */
+nav{
+   background: #282828;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li {
+    padding: 20px;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+    align-self: center;
+    color: #F26419;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.5s ease;
+}
+nav ul li:hover > a,
+nav ul .active > a{
+   color:whitesmoke
+}
+nav ul li img{
+    display: inline-block;
+    height: 30px ;
+    width: 30px;
+}
+/* end nav */
+
+/* start prof */
+#prof{
+    height: 90vh
+}
+#prof .container{
+    width: 90vw;
+    margin: 0px auto;
+}
+#prof .container .img img{
+    width: 100%;
+    padding: 20px 0; 
+}
+
+#prof form{
+    display: flex;
+    flex-direction: column;
+}
+#prof .info form input,
+#prof .info form label,
+#prof .info form button{
+    margin: 0.3em 0;
+}
+#prof .info form label{
+    font-size: 20px;
+    font-style: italic;
+    color:whitesmoke;
+}
+#prof .info form input{
+    height: 40px;
+    font-size: 22px;
+    padding: 15px;
+    background: #282828;
+    color: #F26419;
+    border-radius: 20px;
+    border: 2px solid #F26419;
+}
+#prof .info form button{
+    height: 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    outline: none;
+    color: #F26419;
+    background: #282828;
+    border: 2px solid #F26419;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+#prof .info form button:hover{
+    color: #282828;
+    background: #F26419;
+    border: 2px solid #282828;
+}
+@media screen and (min-width:776px){
+    #prof .container {
+        width: 50%;
+    }
+}
+/* end prof */

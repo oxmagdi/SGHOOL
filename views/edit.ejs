@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+     <!--  google fonts   -->
+     <!--    -->
+    <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/static/css/edit.css">
+</head>
+
+<body>
+         
+         <!--  start prof-content  -->
+<section id="flex">
+    <h1><%= (name) ? name:'Name' %></h1>
+    <h3><%= email %></h3>
+    <div class="info">
+        <form action="" method="post">
+            <label for="arabic">Arabic :</label>
+            <input type="number" name="arabic" value="<%= subjs.arabic %>">
+            <label for="english">English :</label>
+            <input type="number" name="english" value="<%= subjs.english %>">
+            <label for="math">Math :</label>
+            <input type="number" name="math" value="<%= subjs.math %>">
+            <label for="art">Art :</label>
+            <input type="number" name="art" value="<%= subjs.art %>">
+            <label for="religion">Religion :</label>
+            <input type="number" name="religion"  value="<%= subjs.religion %>">
+            <label for="grammar">Grammar :</label>
+            <input type="number" name="grammar" value="<%= subjs.grammar %>">
+            <label for="literature">Literature :</label>
+            <input type="number" name="literature" value="<%= subjs.literature %>">
+            <label for="chemistry">Chemistry :</label>
+            <input type="number" name="chemistry" value="<%= subjs.chemistry %>">
+            <label for="physics">Physics :</label>
+            <input type="number" name="physics" value="<%= subjs.physics %>">
+            <label for="biology">Biology</label>
+            <input type="number" name="biology" value="<%= subjs.biology %>">
+            <button type="submit">Save</button>
+        </form>
+    </div>
+  </div>
+</section>
+    <!--  end prof-content   -->
+         
+          <!--    js     -->
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/fontawesome-all.min.js"></script>
+    <script src="/static/js/login.js"></script>
+</body>
+</html>
